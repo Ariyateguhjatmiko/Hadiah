@@ -70,7 +70,7 @@
   }
   .final-message {
     color: maroon;
-    font-size: 22px;
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 15px;
   }
@@ -103,12 +103,12 @@
     }
 
     function runNumberSequence() {
-      showTextWithDelay('(1)', 1000, () => {
-        showTextWithDelay('(2)', 1000, () => {
-          showTextWithDelay('(3)', 1000, () => {
+      showTextWithDelay('( 1 )', 1000, () => {
+        showTextWithDelay('( 2 )', 1000, () => {
+          showTextWithDelay('( 3 )', 1000, () => {
             contentDiv.innerHTML = '';
             const divText = document.createElement('div');
-            divText.textContent = '(Aku.....)';
+            divText.textContent = '(Sebenarnya.....)';
             contentDiv.appendChild(divText);
             const lanjutButton = document.createElement('button');
             lanjutButton.id = 'lanjutButton';
@@ -124,7 +124,7 @@
     function pageSuka() {
       contentDiv.innerHTML = '';
       const divText = document.createElement('div');
-      divText.textContent = 'Sebenarnya udah suka kamu dari lama..';
+      divText.textContent = 'Aku suka kamu dari lama..';
       contentDiv.appendChild(divText);
       const jadiButton = document.createElement('button');
       jadiButton.id = 'jadiButton';
